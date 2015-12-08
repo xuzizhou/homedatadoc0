@@ -1,0 +1,72 @@
+\documentclass[conference,pdftex,hyphens]{sig-alternate-05-2015}
+
+\usepackage{ifpdf}
+\ifpdf
+	\usepackage{graphicx}
+	\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.mps}
+\fi
+\usepackage{url}
+\usepackage{enumitem}
+
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
+\begin{document}
+
+\title{Essentials of Home Networks
+\thanks{The support of the US National Science 
+Foundation under grants \mbox{NSF-0904350} and \mbox{NSF-1058977} is 
+gratefully acknowledged.}\vspace{-0.77em}}
+
+\numberofauthors{2}
+\author{
+\alignauthor
+Xuzi Zhou and Kenneth L. Calvert\\
+	\affaddr{Laboratory for Advanced Networking}\\
+	\affaddr{University of Kentucky}\\
+	\affaddr{Lexington, KY, USA 40506-0633}\\
+	\email{\{xuzizhou, calvert\}@netlab.uky.edu}
+}
+
+
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+\begin{abstract}
+Home data.
+\end{abstract}
+
+\section{Introduction}
+
+SIGCOMM 2016
+
+IMC 2016
+ICNP 2016
+
+INFOCOM 2016
+
+Story line:
+
+1. It was hard to measure traffic in and out home networks. Most home network flows are transformed by NAT. Have no device level traffic data.
+Previous work: access performance, net nut
+
+2. Measuring home networks is a battle between utility and privacy. Either one is hard to measure. Although Our data collected from household has been highly aggregated and anonymized, we still want to exploit interesting and useful information from the data.
+
+3. Deployment:  onsite installation of local households and mailed self-installation for other US households.
+Our router is acting as the only gateway of internet access in participant households.
+Automatic system maintenance and package update through over-night update system. 
+
+4. Explain the data we are collecting: edges and their parameters
+
+5. Discompose home networks: performance stat, device summary, usage pattern, traffic distribution of applications, and corroborate findings of previous publications and public traffic traces.
+"Reality if relative. Normal is just the middle of the mess." -- a quote from TV series, Grimm
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+%\bibliographystyle{abbrv}
+%\bibliography{homedata}
+
+\end{document}
